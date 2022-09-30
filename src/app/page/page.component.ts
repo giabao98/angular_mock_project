@@ -10,23 +10,19 @@ export class HeaderComponent implements OnInit {
   listData: any = [];
   constructor(private apiServices: MockService) {}
   ngOnInit(): void {
-    console.log("aaaa");
     this.apiServices.getAllProducts().subscribe((res) => {
-      console.log("ress", res);
       this.listData = res;
     });
   }
 
   onSubmitForm(value: any) {
     this.apiServices.getSearchProducts(value).subscribe((res) => {
-      console.log("ress", res);
       this.listData = res;
     });
   }
 
   onSubmitFormVintage(value: any) {
     this.apiServices.getSearchProductsVintage(value).subscribe((res) => {
-      console.log("ress", res);
       this.listData = res;
     });
   }

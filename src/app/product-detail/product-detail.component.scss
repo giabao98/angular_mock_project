@@ -12,7 +12,6 @@
     gap: 30px;
     color: #191847;
   }
-
   .cover-image {
     width: 300px;
     height: 300px;
@@ -24,14 +23,13 @@
   .more-image-container {
     display: flex;
   }
-  .more-image {
-    width: 100px;
-  }
   .image-container img {
     width: 100%;
     object-fit: cover;
   }
-
+  .more-image {
+    width: 100px;
+  }
   .free-shipping {
     display: inline-block;
     background: #191847;
@@ -41,27 +39,22 @@
     color: white;
     font-weight: 400;
   }
-
   .product-name {
     margin: 10px 0 20px 0;
     font-size: 22px;
   }
-
   .regular-price {
     text-decoration: line-through;
   }
-
   .discount-price {
     display: inline-block;
     font-size: 40px;
     font-weight: 700;
   }
-
   .offer-info {
     font-size: 14px;
     color: gray;
   }
-
   .add-to-cart {
     display: inline-block;
     width: 100%;
@@ -87,11 +80,15 @@
   .add-to-cart:hover ion-icon {
     transform: rotate(360deg);
   }
-
   .stock {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+  .stock-info {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
   }
   .stock-status {
     width: 14px;
@@ -99,18 +96,11 @@
     background: #00d98b;
     border-radius: 50%;
   }
-  .stock-info {
-    font-size: 14px;
-    font-weight: 600;
-    color: black;
-  }
-
   .buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
   }
-
   .button {
     width: 200px;
     color: #191847;
