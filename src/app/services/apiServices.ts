@@ -11,7 +11,6 @@ export class MockApiService {
     return this.http.get(url);
   }
   getSearchProducts(value: any): Observable<any> {
-    console.log(value, "..........");
     const url = `https://utc2ranking.azurewebsites.net/api/Product/Search?keysearch=${value.search}`;
     return this.http.get(url, value);
   }
