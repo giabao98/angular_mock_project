@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { MockService } from "../services/apiServices";
+import { MockApiService } from "../services/apiServices";
 
 @Component({
   selector: "app-header",
@@ -7,23 +7,23 @@ import { MockService } from "../services/apiServices";
   styleUrls: ["../app.component.scss"],
 })
 export class HeaderComponent implements OnInit {
-  listData: any = [];
-  constructor(private apiServices: MockService) {}
+  data: any = [];
+  constructor(private apiServices: MockApiService) {}
   ngOnInit(): void {
     this.apiServices.getAllProducts().subscribe((res) => {
-      this.listData = res;
+      this.data = res;
     });
   }
 
   onSubmitForm(value: any) {
     this.apiServices.getSearchProducts(value).subscribe((res) => {
-      this.listData = res;
+      this.data = res;
     });
   }
 
   onSubmitFormVintage(value: any) {
     this.apiServices.getSearchProductsVintage(value).subscribe((res) => {
-      this.listData = res;
+      this.data = res;
     });
   }
 }

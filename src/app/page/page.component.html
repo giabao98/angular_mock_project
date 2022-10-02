@@ -14,11 +14,7 @@
       <div class="navbar_input">
         <form #myForm="ngForm" (ngSubmit)="onSubmitForm(myForm.value)">
           <button class="navbar_input-search" type="submit">
-            <img
-              class="navbar_input-search"
-              src="../../assets/image/Vector.svg"
-              alt=""
-            />
+            <img class="navbar_input-search" src="../../assets/image/Vector.svg" alt="" />
           </button>
           <input type="text" ngModel name="search" />
         </form>
@@ -34,8 +30,7 @@
         <img src="../../assets/image/edward_powlowski.png" alt="" />
       </div>
     </div>
-    <span class="header-icon header-icon-list"
-      ><i class="fas fa-list"></i>
+    <span class="header-icon header-icon-list"><i class="fas fa-list"></i>
     </span>
   </nav>
   <div class="list-map">
@@ -43,11 +38,7 @@
       <a class="list-map-close"><i class="far fa-window-close"></i></a>
       <div class="navbar_between-mobile">
         <div class="navbar_input-mobile">
-          <img
-            class="navbar_input-search"
-            src="../../assets/image/Vector.svg"
-            alt=""
-          />
+          <img class="navbar_input-search" src="../../assets/image/Vector.svg" alt="" />
           <input type="text" />
           <img src="../../assets/image/icon_close.svg" alt="" />
         </div>
@@ -336,21 +327,12 @@
             </div>
             <div class="right_top-show">
               <div class="right_top-show-item">
-                <a href="#" class="btn btn_grey">
+                <a href="" class="btn btn_grey">
                   <h3 class="links_name">Show all</h3>
                 </a>
                 <a href="#" class="btn btn_default">
-                  <form
-                    #myForm1="ngForm"
-                    (ngSubmit)="onSubmitFormVintage(myForm1.value)"
-                  >
-                    <button
-                      class="links_name border-none"
-                      type="Vintage"
-                      name="Vintage"
-                      value="Vintage"
-                      ngModel
-                    >
+                  <form #myForm1="ngForm" (ngSubmit)="onSubmitFormVintage(myForm1.value)">
+                    <button class="links_name border-none" type="Vintage" name="Vintage" value="Vintage" ngModel>
                       Vintage
                     </button>
                   </form>
@@ -397,12 +379,7 @@
                     <img src="../../assets/image/star.svg" alt="" srcset="" />
                     <img src="../../assets/image/star.svg" alt="" srcset="" />
                     <img src="../../assets/image/star.svg" alt="" srcset="" />
-                    <img
-                      class="star"
-                      src="../../assets/image/star1.svg"
-                      alt=""
-                      srcset=""
-                    />
+                    <img class="star" src="../../assets/image/star1.svg" alt="" srcset="" />
                   </div>
                   <div class="product_item-rating" *ngIf="item.rating === 4">
                     <img src="../../assets/image/star.svg" alt="" srcset="" />
@@ -443,7 +420,3 @@
     </div>
   </div>
 </div>
-<!-- <div *ngFor=" let item of listData">
-    <p>ten: {{item.detail}}</p>
-    <img [src]="item.img" alt="">
-  </div> -->

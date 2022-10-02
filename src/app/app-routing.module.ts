@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './page/page.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { HeaderComponent } from "./page/page.component";
+import { DetailItemComponent } from "./product-detail/product-detail.component";
 
 const routes: Routes = [
-  {path: '', component:HeaderComponent},
-  {path: 'product-detail/:id', component:ProductDetailComponent}
+  { path: "", component: HeaderComponent },
+  { path: "product-detail/:id", component: DetailItemComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

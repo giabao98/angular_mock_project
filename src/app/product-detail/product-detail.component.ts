@@ -1,16 +1,16 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { MockService } from "../services/apiServices";
+import { MockApiService } from "../services/apiServices";
 
 @Component({
   selector: "app-product-detail",
   templateUrl: "./product-detail.component.html",
   styleUrls: ["./product-detail.component.scss"],
 })
-export class ProductDetailComponent implements OnInit {
+export class DetailItemComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
-    private apiServices: MockService
+    private apiServices: MockApiService
   ) {}
   productDetail: any;
   ngOnInit(): void {
