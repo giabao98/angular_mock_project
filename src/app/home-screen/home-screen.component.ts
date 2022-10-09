@@ -31,6 +31,7 @@ export class HomeScreenComponent implements OnInit {
   allText: any = {
     shopName: 'Shopka',
     sellOnShop: 'Sell on Shopka',
+    register: 'Register',
     categoryName: {
       clothing: 'Clothing & Shoes',
       entertainment: 'Entertainment',
