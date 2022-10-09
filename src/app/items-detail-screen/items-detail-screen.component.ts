@@ -16,8 +16,8 @@ export class ItemsDetailScreenComponent implements OnInit {
   itemDetail: any;
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((parameters) => {
-      this.mockApiServices.getItemDetail(parameters.id).subscribe((res) => {
-        this.itemDetail = res;
+      this.mockApiServices.getItemDetail(parameters.id).subscribe((response) => {
+        this.itemDetail = response;
       });
     });
   }
