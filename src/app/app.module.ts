@@ -5,10 +5,14 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { HeaderComponent } from "./page/page.component";
-import { DetailItemComponent } from "./product-detail/product-detail.component";
+import { ItemsDetailScreenComponent } from "./items-detail-screen/items-detail-screen.component";
+import { HomeScreenComponent } from './home-screen/home-screen.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, DetailItemComponent],
+  declarations: [
+    AppComponent,
+    ItemsDetailScreenComponent,
+    HomeScreenComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
