@@ -1,18 +1,18 @@
 <header>
-    <nav id="main-nav" class="navigationBar">
+    <nav id="main-nav" class="navigation_bar">
       <ul class="first_navbar">
         <li>
-          <a href="" class="navbar_logo">
+          <a href="" class="navigation_bar_logo">
             <span>S</span>
-            <h2>Shopka</h2>
+            <h2>{{getText().shopName}}</h2>
           </a>
         </li>
-        <li><a href="">Sell on Shopka</a></li>
+        <li><a href="">{{getText().sellOnShop}}</a></li>
         <li><a href="">Register</a></li>
       </ul>
       <div class="navbar_between">
         <div class="navbar_input">
-          <form #myForm="ngForm" (ngSubmit)="onSubmitForm(myForm.value)">
+          <form #myForm="ngForm" (ngSubmit)="onSubmitSearch(myForm.value)">
             <button class="navbar_input-search" type="submit">
               <img class="navbar_input-search" src="../../assets/Vector.svg" alt="" />
             </button>
@@ -59,51 +59,51 @@
     <div class="category">
       <div class="item_category">
         <img src="../../assets/hanger.svg" alt="" />
-        <span>Clothing & Shoes</span>
+        <span>{{getText().categoryName.clothing}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/cinema.svg" alt="" />
-        <span>Entertainment</span>
+        <span>{{getText().categoryName.entertainment}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/concert.svg" alt="" />
-        <span>Music</span>
+        <span>{{getText().categoryName.music}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/fitness.svg" alt="" />
-        <span>Sport & Lifestyle</span>
+        <span>{{getText().categoryName.sport}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/pets.svg" alt="" />
-        <span>Pets</span>
+        <span>{{getText().categoryName.pets}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/fitness.svg" alt="" />
-        <span>Kitchen Accessories</span>
+        <span>{{getText().categoryName.kitchen}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/concert.svg" alt="" />
-        <span>Travel Equipment</span>
+        <span>{{getText().categoryName.travel}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/pets.svg" alt="" />
-        <span>Growing & Garden</span>
+        <span>{{getText().categoryName.growing}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/concert.svg" alt="" />
-        <span>Electrical Tools</span>
+        <span>{{getText().categoryName.electrical}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/fitness.svg" alt="" />
-        <span>Mother Care</span>
+        <span>{{getText().categoryName.mother}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/concert.svg" alt="" />
-        <span>Toys & Entertainment</span>
+        <span>{{getText().categoryName.toys}}</span>
       </div>
       <div class="item_category">
         <img src="../../assets/fitness.svg" alt="" />
-        <span>Vintage</span>
+        <span>{{getText().categoryName.vintage}}</span>
       </div>
     </div>
     <div class="container_department">

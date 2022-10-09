@@ -22,9 +22,32 @@ export class HomeScreenComponent implements OnInit {
     });
   }
 
-  onSubmitForm(value: any) {
+  onSubmitSearch(value: any) {
     this.mockApiServices.searchItems(value).subscribe((response) => {
       this.data = response;
     });
+  }
+
+  allText: any = {
+    shopName: 'Shopka',
+    sellOnShop: 'Sell on Shopka',
+    categoryName: {
+      clothing: 'Clothing & Shoes',
+      entertainment: 'Entertainment',
+      music: 'Music',
+      sport: 'Sport & Lifestyle',
+      pets: 'Pets',
+      kitchen: 'Kitchen Accessories',
+      travel: 'Travel Equipment',
+      growing: 'Growing & Garden',
+      electrical: 'Electrical Tools',
+      mother: 'Mother Care',
+      toys: 'Toys & Entertainment',
+      vintage: 'Vintage'
+    }
+  }
+
+  getText() {
+    return this.allText;
   }
 }
